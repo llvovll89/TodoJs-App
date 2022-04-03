@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoJs</title>
+    <link rel="stylesheet" href="./css/todo.css">
+    <!-- box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        <h2 class="title">Todo Js App
+        </h2>
+        <!-- one 3 title위 -->
+        <span class="one"></span>
+        <span class="one2"></span>
+        <span class="one3"></span>
+        <span class="lte">LTE</span>
+        <span class="battery"><i class='bx bx-battery'></i></span>
+        <!-- 마진값 넣기 -->
+        <div class="todo-temp">
+            <div class="content">
+                <input type="text" id="todo-input" placeholder="할일목록을 만들어보세요,," required" onkeydown="if(event.keyCode==13) javascript: addItem();">
+                <button type="button" class="todo-btn" onclick="addItem()">할일 추가</button>
+            </div>
+            <!-- 밑에 todolist 목록나오기 -->
+            <ul id="todolist">
+
+            </ul>
+        </div>
+    </div>
+    <script src="./js/todo.js"></script>
+</body>
+
+</html>

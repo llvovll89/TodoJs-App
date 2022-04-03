@@ -1,0 +1,198 @@
+/* 구글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cute Font', cursive;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    border-radius: 12px;
+}
+
+.container #todo-input {
+    border: none;
+    border-radius: 6px;
+}
+
+.container #todo-input:focus {
+    outline: none;
+}
+
+.container .title {
+    position: relative;
+    padding: 20px;
+    padding-bottom: 10px;
+    font-size: 32px;
+    letter-spacing: 2px;
+    background: #fff;
+    color: #000;
+}
+
+.container .battery {
+    position: absolute;
+    top: 8px;
+    right: 5%;
+    font-size: 25px;
+    color: #000;
+}
+
+.container .one {
+    position: absolute;
+    top: 5px;
+    left: 39%;
+    transform: translateX(-39%);
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.container .one2 {
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 13px;
+    height: 13px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.container .one3 {
+    position: absolute;
+    top: 3px;
+    right: 35%;
+    transform: translateX(-35%);
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.container .lte {
+    position: absolute;
+    top: 11px;
+    right: 12%;
+    font-size: 16px;
+    color: #000;
+}
+
+.container .title:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    width: 150px;
+    height: 20px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.container .todo-temp {
+    background: rgba(255, 234, 255, .2);
+}
+
+.container .todo-temp .content {
+    margin: 0 22px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 330px 100px;
+    grid-auto-rows: 40px;
+    grid-gap: 5px;
+}
+
+.container .todo-btn {
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container ul {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    list-style: none;
+    text-align: left;
+}
+
+.container ul .item {
+    background: #fff;
+    margin: 2px 0px;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    color: #333;
+    font-size: 18px;
+}
+
+.close-btn {
+    margin-left: 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* media-size 맞추기 - mobile*/
+@media (max-width: 564px) {
+    .container {
+        width: 420px;
+    }
+
+    .container .todo-temp .content {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 280px 60px;
+        grid-auto-rows: 40px;
+        grid-gap: 5px;
+    }
+
+    .container .one {
+        position: absolute;
+        top: 12px;
+        left: 35%;
+        transform: translateX(-35%);
+        width: 10px;
+        height: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+    }
+
+    .container .one2 {
+        position: absolute;
+        top: 12px;
+        left: 220px;
+        width: 13px;
+        height: 13px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+    }
+
+    .container .one3 {
+        position: absolute;
+        top: 11px;
+        right: 145px;
+        transform: translateX(-35%);
+        width: 15px;
+        height: 15px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+    }
+}
