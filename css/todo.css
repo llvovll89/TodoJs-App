@@ -154,13 +154,13 @@
 /* media-size 맞추기 - mobile*/
 @media (max-width: 564px) {
     .container {
-        width: 395px;
+        width: 380px;
     }
 
     .container .todo-temp .content {
         padding: 15px;
         display: grid;
-        grid-template-columns: 240px 60px;
+        grid-template-columns: 225px 55px;
         grid-auto-rows: 40px;
         grid-gap: 5px;
     }
